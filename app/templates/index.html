@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Community Events Board</title>
+    </head>
+    <body>
+      <h1>Community Events Board</h1>
+      <h2> {{event_name}} <h1>
+
+      <div class="event-list">
+        <ul>
+          {% for event in events %}
+          <!--jinja for for loops -->
+            <li>{{ event.name }} - {{ event.date }} - {{event.type}}</li>
+          {% endfor %}
+          <p> Input </p>
+          <button onclick="window.location.href = 'http://0.0.0.0:8080/input';">Input</button>
+
+          <p>Click the button to clear the database.</p>
+          <button onclick="window.location.href = 'http://0.0.0.0:8080/delete_all';">Delete All</button>
+
+      </div>
+    </body>
+</html>
