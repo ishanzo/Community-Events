@@ -1,23 +1,19 @@
 <html>
     <head>
-        <title>Community Events Board</title>
+        <title> trendy gifs</title>
     </head>
+    <h1> SEARCH GIFS ON TWITTER </h1>
     <body>
-      <h1>Community Events Board</h1>
-      <h2> {{event_name}} <h1>
-
-      <div class="event-list">
-        <ul>
-          {% for event in events %}
-          <!--jinja for for loops -->
-            <li>{{ event.name }} - {{ event.date }} - {{event.type}}</li>
-          {% endfor %}
-          <p> Input </p>
-          <button onclick="window.location.href = 'http://0.0.0.0:8080/input';">Input</button>
-
-          <p>Click the button to clear the database.</p>
-          <button onclick="window.location.href = 'http://0.0.0.0:8080/delete_all';">Delete All</button>
-
-      </div>
-    </body>
+      <p>
+      <form method="post" action="/results ">
+      </p>
+      <label for = "gif_amt"> Amount of GIFS </label> <br>
+      <input type = "number" name = "quantity" min = "1" max = "30"
+      <label for="name">Name: </label> <br>
+      <input type='text' name='name'>
+      <label for="email">Email</label> <br>
+      <input type='Email' name='email'>
+      <input type='Submit'>
+  </form>
+</body>
 </html>
