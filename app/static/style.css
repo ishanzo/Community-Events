@@ -1,0 +1,17 @@
+body{
+  background: blue;
+  color: white;
+  text-align: center;
+}
+h1 {
+  font-size: 60px;
+  font-style: oblique;
+  font-weight: bold;
+  color: #000;
+  position: fixed;
+  top: 30px;
+  min-height: 30px;
+  display: inline-block;
+  left: 0;
+  width: 100%;
+}

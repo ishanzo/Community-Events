@@ -1,19 +1,25 @@
 <html>
     <head>
-        <title> trendy gifs</title>
+        <title>gifs</title>
     </head>
-    <h1> SEARCH GIFS ON TWITTER </h1>
-    <body>
-      <p>
-      <form method="post" action="/results ">
-      </p>
-      <label for = "gif_amt"> Amount of GIFS </label> <br>
-      <input type = "number" name = "quantity" min = "1" max = "30"
-      <label for="name">Name: </label> <br>
-      <input type='text' name='name'>
-      <label for="email">Email</label> <br>
-      <input type='Email' name='email'>
-      <input type='Submit'>
-  </form>
-</body>
-</html>
+    <link rel="stylesheet" href='/static/style.css'/>
+      <body>
+        <h1>TRENDY GIF SEARCH ON TWITTER</h1>
+        <p>
+        <form method="post" action="/results ">
+          </p>
+          <label for = "gif_amt"> Amount of GIFS: </label>
+          <input type = "number" name = "quantity" min = "1" max = "30" placeholder="1-30" style="width:150px">
+          <p>
+          <label for="name">Name: </label>
+          <input type='text' name='name' placeholder=" Jane Doe">
+          <p>
+          <label for="email">Email</label>
+          <!-- pattern checks whether or not the user input looks like a normal email address -->
+          <input type='Email' name='email' placeholder="janedoe@gmail.com"pattern="/^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+          <p>
+          <br>
+          <input type='Submit'>
+          </form>
+        </body>
+      </html>
